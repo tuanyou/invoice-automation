@@ -13,8 +13,8 @@ def get_access_token():
     '''获取访问凭证'''
     url = 'https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal'
     data = {
-        "app_id": "cli_a609d0f20060500e",
-        "app_secret": "LgZ5u4IeoDGWqLsJWfgiCFpuvwwU6OX1"
+        "app_id": "xx",
+        "app_secret": "x"
     }
     ret = requests.post(url=url, data=json.dumps(data, ensure_ascii=False))
     data = ret.json()
@@ -436,12 +436,12 @@ def write_yh_invoice(folder_path, excel_file_path, product_info_list, amazon_war
     print(f"产品信息和图片已写入到 {excel_file_path}")
 
 
-shipping_calculator_spreadsheet_id = 'Hl8MsJsUUhfTL1tTddXcu1vInHg' # 运费计算器id
-multidimensional_table_token = 'Nidob5n9MasAr4sdo8nceFV2nMf' # 仓储多维表格token
-multidimensional_table_id = 'tbl0bb50lIq7h6bw' # 仓储多维表格id
-multidimensional_table_view_id = 'vew7O6GgbP' # 仓储多维表格view_id
-fba_shipment_details_table_id = 'Rwgrstzxfh9ACLtc2vUcBKtKnUg' # FBA表格id
-fba_shipment_details_table_range = '1dtcjs!A:O' # FBA货件明细表range
+shipping_calculator_spreadsheet_id = 'xx' # 运费计算器id
+multidimensional_table_token = 'xx' # 仓储多维表格token
+multidimensional_table_id = 'xx' # 仓储多维表格id
+multidimensional_table_view_id = 'xx' # 仓储多维表格view_id
+fba_shipment_details_table_id = 'xx' # FBA表格id
+fba_shipment_details_table_range = 'xx!A:O' # FBA货件明细表range
 template_path = r'D:\work\data\发票\三个发票模板\德速发票模版.xlsx' # 德速发票模版地址
 save_path = r'D:\work\data\发票\德速' # 德速生成发票保存地址
 save_image_path = r'D:\work\data\发票\德速\产品图片' # 德速发票图片保存地址

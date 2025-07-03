@@ -8,8 +8,8 @@ def get_access_token():
     '''获取访问凭证'''
     url = 'https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal'
     data = {
-        "app_id": "cli_a609d0f20060500e",
-        "app_secret": "LgZ5u4IeoDGWqLsJWfgiCFpuvwwU6OX1"
+        "app_id": "xx",
+        "app_secret": "xx"
     }
     ret = requests.post(url=url, data=json.dumps(data, ensure_ascii=False))
     data = ret.json()
